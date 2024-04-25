@@ -58,6 +58,9 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_managed_certificate_ids"></a> [managed\_certificate\_ids](#output\_managed\_certificate\_ids) | The IDs of the managed certificates. |
+| <a name="output_self_managed_certificate_ids"></a> [self\_managed\_certificate\_ids](#output\_self\_managed\_certificate\_ids) | The IDs of the self-managed certificates. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
