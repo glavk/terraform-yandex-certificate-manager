@@ -10,7 +10,10 @@ resource "yandex_cm_certificate" "self_managed" {
     certificate = each.value.certificate
     private_key = each.value.private_key
 
-    private_key_lockbox_secret = each.value.private_key_lockbox_secret
+    private_key_lockbox_secret {
+      id  = each.value.private_key_lockbox_secret.id
+      key = each.value.private_key_lockbox_secret.key
+    }
   }
 
   labels = each.value.labels
