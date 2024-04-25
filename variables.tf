@@ -1,3 +1,15 @@
+variable "create_managed" {
+  description = "Determines whether a managed certificate is created"
+  type        = bool
+  default     = false
+}
+
+variable "create_self_managed" {
+  description = "Determines whether a self managed certificate is created"
+  type        = bool
+  default     = true
+}
+
 variable "self_managed" {
   description = "Self-managed certificate specification."
   type = map(object({
